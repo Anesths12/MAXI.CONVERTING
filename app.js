@@ -6,7 +6,6 @@ fetch('orders.json')
     const table = document.getElementById('ordersTable');
 
     orders.forEach(order => {
-      if (order.status !== "pending") return;
 
       const row = document.createElement('tr');
       row.className = order.status;
