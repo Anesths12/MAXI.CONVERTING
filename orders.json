@@ -1,11 +1,11 @@
 [
     {
-      "orderId": "PO-1001",
-      "supplier": "ALFA SUPPLIERS",
-      "date": "2026-01-12",
+      "orderId": "345",
+      "supplier": "SAKOS",
+      "date": "08/02/2026",
       "items": 3,
       "quantity": 120,
-      "status": "pending"
+      "status": "ΕΚΚΡΕΜΕΙ ΕΠΙΒΕΒΑΙΩΣΗ"
     },
     {
       "orderId": "PO-1002",
@@ -15,5 +15,30 @@
       "quantity": 40,
       "status": "pending"
     }
+     {
+      "orderId": "PO-1002",
+      "supplier": "BETA TRADE",
+      "date": "2026-01-18",
+      "items": 1,
+      "quantity": 40,
+      "status": "pending"
+    }
+     {
+      "orderId": "PO-1002",
+      "supplier": "BETA TRADE",
+      "date": "2026-01-18",
+      "items": 1,
+      "quantity": 40,
+      "status": "pending"
+    }
+     {
+      "orderId": "PO-1002",
+      "supplier": "BETA TRADE",
+      "date": "2026-01-18",
+      "items": 1,
+      "quantity": 40,
+      "status": "pending"
+    }
   ]
+
   
