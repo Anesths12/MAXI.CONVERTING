@@ -1,14 +1,27 @@
 console.log("JS φορτώθηκε");
 
 fetch('orders.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("HTTP error " + response.status);
+    }
+    return response.json();
+  })
   .then(orders => {
+    console.log("Loaded orders:", orders);
+
     const table = document.getElementById('ordersTable');
 
     orders.forEach(order => {
 
       const row = document.createElement('tr');
-      row.className = order.status;
+
+      // ΜΗΝ βάζεις raw status σαν class
+      if (order.status === "pending") {
+        row.classList.add("pending");
+      } else if (order.status === "completed") {
+        row.classList.add("completed");
+      }
 
       row.innerHTML = `
         <td>${order.orderId}</td>
